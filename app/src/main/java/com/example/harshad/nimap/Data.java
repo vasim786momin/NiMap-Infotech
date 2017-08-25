@@ -1,5 +1,7 @@
 package com.example.harshad.nimap;
 
+import java.util.ArrayList;
+
 /**
  * Created by harshad on 24/08/2017.
  */
@@ -7,7 +9,27 @@ package com.example.harshad.nimap;
 public class Data {
 
     private String CategoryName;
-    private String iphone;
+    private ArrayList<CategoryImage>categoryImageArrayList;
+
+    public ArrayList<CategoryImage> getCategoryImageArrayList() {
+        return categoryImageArrayList;
+    }
+
+    public void setCategoryImageArrayList(ArrayList<CategoryImage> categoryImageArrayList) {
+        this.categoryImageArrayList = categoryImageArrayList;
+    }
+
+    public static class CategoryImage{
+        private String iphoneImage;
+
+       public String getIphoneImage() {
+           return iphoneImage;
+       }
+
+       public void setIphoneImage(String iphoneImage) {
+           this.iphoneImage = iphoneImage;
+       }
+   }
 
     public String getCategoryName() {
         return CategoryName;
@@ -17,11 +39,5 @@ public class Data {
         CategoryName = categoryName;
     }
 
-    public String getIphone() {
-        return iphone;
-    }
 
-    public void setIphone(String iphone) {
-        this.iphone = iphone;
-    }
 }

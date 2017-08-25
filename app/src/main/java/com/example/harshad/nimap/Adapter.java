@@ -23,6 +23,8 @@ public class Adapter extends BaseAdapter {
 
     ArrayList<Data>dataArrayList;
     Context context;
+    String url;
+    HashMap<String,String> url_map;
 
     public Adapter(Context context,ArrayList<Data>list){
         this.context=context;
@@ -60,31 +62,34 @@ public class Adapter extends BaseAdapter {
         holder.txtView.setText(dataArrayList.get(position).getCategoryName());
 
 
-        HashMap<String,String> url_map=new HashMap<>();
 
-        String url=dataArrayList.get(position).getIphone();
-        url=url.replaceAll(" ","%20");
 
-        for(int i=0;i<dataArrayList.size();i++){
+
+        for(Data.CategoryImage categoryImage:dataArrayList.get(position).getCategoryImageArrayList()){
+             url_map=new HashMap<>();
+             url=categoryImage.getIphoneImage();
+            url = url.replaceAll(" ", "%20");
+            Log.d("test","url12:"+url);
+
+            url_map.put("", url);
+
+
+            for (String name : url_map.keySet()) {
+                TextSliderView textSliderView = new TextSliderView(context);
+                textSliderView
+                        .description(name)
+                        .image(url_map.get(name))
+                        .setScaleType(BaseSliderView.ScaleType.Fit);
+                holder.slider.addSlider(textSliderView);
+
+            }
 
         }
-        url_map.put("",url);
 
-        Log.d("test","URL_MAP_KEY_SET:"+url_map.keySet());
-
-        for (String name : url_map.keySet()) {
-            TextSliderView textSliderView = new TextSliderView(context);
-            textSliderView
-                    .description(name)
-                    .image(url_map.get(name))
-                    .setScaleType(BaseSliderView.ScaleType.Fit);
-            holder.slider.addSlider(textSliderView);
-
-        }
-        holder.slider.setPresetTransformer(SliderLayout.Transformer.Accordion);
+        holder.slider.setPresetTransformer(SliderLayout.Transformer.Default);
         holder.slider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
       //  holder.slider.setCustomAnimation(new DescriptionAnimation());
-        holder.slider.setDuration(4000);
+        holder.slider.setDuration(8000);
 
         return convertView;
     }

@@ -57,20 +57,22 @@ public class MainActivity extends AppCompatActivity {
 
                         JSONArray jsonArray1=jsonObject1.getJSONArray("categoryImages");
 
+                        ArrayList<Data.CategoryImage>categoryImageArrayList=new ArrayList<>();
                         for(int j=0;j<jsonArray1.length();j++){
-
-
-                            data.setIphone(jsonArray1.getJSONObject(j).getString("iphone"));
+                            Data.CategoryImage categoryImage=new Data.CategoryImage();
+                            categoryImage.setIphoneImage(jsonArray1.getJSONObject(j).getString("iphone"));
+                            //data.setIphone(jsonArray1.getJSONObject(j).getString("iphone"));
                             Log.d("test","iphone:"+jsonArray1.getJSONObject(j).getString("iphone"));
-                            //dataArrayList.add(data1);
+
+                            categoryImageArrayList.add(categoryImage);
 
                         }
+                        data.setCategoryImageArrayList(categoryImageArrayList);
 
                         dataArrayList.add(data);
 
                         adapter=new Adapter(MainActivity.this,dataArrayList);
                         listView.setAdapter(adapter);
-
 
 
                     }
