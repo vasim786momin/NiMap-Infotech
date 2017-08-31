@@ -62,9 +62,6 @@ public class Adapter extends BaseAdapter {
         holder.txtView.setText(dataArrayList.get(position).getCategoryName());
 
 
-
-
-
         for(Data.CategoryImage categoryImage:dataArrayList.get(position).getCategoryImageArrayList()){
              url_map=new HashMap<>();
              url=categoryImage.getIphoneImage();
