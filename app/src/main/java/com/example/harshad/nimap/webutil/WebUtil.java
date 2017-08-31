@@ -22,6 +22,7 @@ import java.util.Map;
 
 public class WebUtil {
 
+
     public static void threadLoadData(Context context, final Handler handler){
         final ProgressDialog progressDialog=new ProgressDialog(context);
         progressDialog.setMessage("Please wait");
