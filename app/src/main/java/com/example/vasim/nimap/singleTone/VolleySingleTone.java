@@ -1,4 +1,4 @@
-package com.example.harshad.nimap.singleTone;
+package com.example.vasim.nimap.singleTone;
 
 import android.content.Context;
 
@@ -7,7 +7,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
 /**
- * Created by harshad on 24/08/2017.
+ * Created by vasim on 24/08/2017.
  */
 
 public class VolleySingleTone {

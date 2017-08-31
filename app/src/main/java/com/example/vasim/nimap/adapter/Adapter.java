@@ -1,4 +1,4 @@
-package com.example.harshad.nimap.adapter;
+package com.example.vasim.nimap.adapter;
 
 import android.content.Context;
 import android.util.Log;
@@ -11,14 +11,14 @@ import android.widget.TextView;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
-import com.example.harshad.nimap.R;
-import com.example.harshad.nimap.model.Data;
+import com.example.vasim.nimap.R;
+import com.example.vasim.nimap.model.Data;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created by harshad on 24/08/2017.
+ * Created by vasim on 24/08/2017.
  */
 
 

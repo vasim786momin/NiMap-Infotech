@@ -1,4 +1,4 @@
-package com.example.harshad.nimap;
+package com.example.vasim.nimap;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

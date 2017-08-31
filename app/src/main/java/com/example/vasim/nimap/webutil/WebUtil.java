@@ -1,23 +1,22 @@
-package com.example.harshad.nimap.webutil;
+package com.example.vasim.nimap.webutil;
 
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.example.harshad.nimap.R;
-import com.example.harshad.nimap.singleTone.VolleySingleTone;
+import com.example.vasim.nimap.R;
+import com.example.vasim.nimap.singleTone.VolleySingleTone;
 
 import java.util.Map;
 
 /**
- * Created by harshad on 24/08/2017.
+ * Created by vasim on 24/08/2017.
  */
 
 public class WebUtil {

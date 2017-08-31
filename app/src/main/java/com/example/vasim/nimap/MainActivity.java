@@ -1,4 +1,4 @@
-package com.example.harshad.nimap;
+package com.example.vasim.nimap;
 
 import android.os.Handler;
 import android.os.Message;
@@ -7,9 +7,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
 
-import com.example.harshad.nimap.adapter.Adapter;
-import com.example.harshad.nimap.model.Data;
-import com.example.harshad.nimap.webutil.WebUtil;
+import com.example.vasim.nimap.adapter.Adapter;
+import com.example.vasim.nimap.model.Data;
+import com.example.vasim.nimap.webutil.WebUtil;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -1,9 +1,9 @@
-package com.example.harshad.nimap.model;
+package com.example.vasim.nimap.model;
 
 import java.util.ArrayList;
 
 /**
- * Created by harshad on 24/08/2017.
+ * Created by vasim on 24/08/2017.
  */
 
 public class Data {

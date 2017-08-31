@@ -1,4 +1,4 @@
-package com.example.harshad.nimap;
+package com.example.vasim.nimap;
 
 import org.junit.Test;
 
