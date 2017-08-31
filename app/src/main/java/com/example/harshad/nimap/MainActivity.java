@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
 
+import com.example.harshad.nimap.adapter.Adapter;
+import com.example.harshad.nimap.model.Data;
 import com.example.harshad.nimap.webutil.WebUtil;
 
 import org.json.JSONArray;
@@ -14,7 +16,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 

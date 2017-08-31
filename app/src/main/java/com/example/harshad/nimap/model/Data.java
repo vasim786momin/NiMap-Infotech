@@ -1,4 +1,4 @@
-package com.example.harshad.nimap;
+package com.example.harshad.nimap.model;
 
 import java.util.ArrayList;
 

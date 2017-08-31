@@ -1,4 +1,4 @@
-package com.example.harshad.nimap;
+package com.example.harshad.nimap.adapter;
 
 import android.content.Context;
 import android.util.Log;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
+import com.example.harshad.nimap.R;
+import com.example.harshad.nimap.model.Data;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,8 +32,8 @@ public class Adapter extends BaseAdapter {
     public Adapter(Context context,ArrayList<Data>list){
         this.context=context;
         this.dataArrayList=list;
-
     }
+
     @Override
     public int getCount() {
         return dataArrayList.size();
@@ -52,7 +54,7 @@ public class Adapter extends BaseAdapter {
         Holder holder;
         if(convertView==null){
             holder=new Holder();
-            convertView=View.inflate(context,R.layout.list_item,null);
+            convertView=View.inflate(context, R.layout.list_item,null);
             holder.txtView= (TextView) convertView.findViewById(R.id.txtView);
             holder.slider= (SliderLayout) convertView.findViewById(R.id.slider);
             convertView.setTag(holder);

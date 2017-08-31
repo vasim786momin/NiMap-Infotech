@@ -11,6 +11,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.harshad.nimap.R;
 import com.example.harshad.nimap.singleTone.VolleySingleTone;
 
 import java.util.Map;
@@ -27,7 +28,7 @@ public class WebUtil {
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progressDialog.show();
 
-        String url="http://test.chatongo.in/getcategorydata.json";
+        String url=context.getString(R.string.load_data);
         StringRequest stringRequest=new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
