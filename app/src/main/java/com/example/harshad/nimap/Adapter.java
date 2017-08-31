@@ -19,6 +19,7 @@ import java.util.HashMap;
  * Created by harshad on 24/08/2017.
  */
 
+
 public class Adapter extends BaseAdapter {
 
     ArrayList<Data>dataArrayList;
